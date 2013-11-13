@@ -1,0 +1,3 @@
+module() { eval `$MODULECMD_PATH/modulecmd.sh $$ ksh $*`; }
+
+

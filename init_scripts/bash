@@ -1,0 +1,4 @@
+
+module() { eval `$MODULECMD_PATH/modulecmd.sh $$ bash $*`; }
+export -f module
+
