@@ -1,0 +1,11 @@
+
+const int ERR_INVALID_USERNAME = 102;
+const int ERR_INVALID_HOSTNAME = 103;
+const int ERR_INVALID_EVENT    = 104;
+const int ERR_COULDNOTLOG = 120;
+const int LOG_SUCCESSFUL   = 0;
+const int SQL_ERR_NOCREATETABLE = 121;
+const int SQL_CREATE_SUCCESS    = 0;
+const unsigned int ERR_ESCAPED_STRING_TOO_LARGE = 105;
+
+
