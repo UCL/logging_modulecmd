@@ -37,7 +37,7 @@ TimeCode=${Date:0:6}
 #      It's hardly perfect, but it at least does something.
 shift
 
-UsageFile=${LogFilesDirectory}/$SessionPID.$TimeCode.`whoami`.`hostname`.${JOB_ID:=undefined}.${TASK_ID:=undefined}
+UsageFile=${LogFilesDirectory}/$SessionPID.$TimeCode.`whoami`.`hostname -s`.${JOB_ID:=undefined}.${TASK_ID:=undefined}
 umask 0077 # Thus files should be 0600
 
 
@@ -68,7 +68,7 @@ done
 ## Gather information
 
 CurrentUser=`whoami`
-CurrentHost=`hostname`
+CurrentHost=`hostname -s`
 CommandSource=$1 #(almost certainly 'bash')
 shift
 
